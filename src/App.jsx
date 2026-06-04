@@ -464,7 +464,7 @@ const App = () => {
             <img
               src={Logo}
               alt="Menu QR"
-              className="w-[10px] h-[10px] rounded-lg"
+              className="w-[50px] h-[50px] rounded-lg"
             />
             </div>
             <div className="hidden sm:block">
@@ -559,7 +559,7 @@ const App = () => {
               <img
                 src={Logo}
                 alt="Menu QR"
-                className="w-[10px] h-[10px] rounded-lg"
+                className="w-[50px] h-[50px] rounded-lg"
               />
               </div>
               <span className="font-bold">DUNAMIS HOTPLATE</span>
