@@ -120,7 +120,7 @@ const MENU_DATA = {
     },
     {
       name: 'Rolex (Eggs & Chap)',
-      price: '2,000 UGX',
+      price: '2,500 UGX',
       desc: 'The Masaka classic',
       hot: true,
     },
@@ -137,9 +137,15 @@ const MENU_DATA = {
       hot: false,
     },
     {
-      name: 'Black Tea',
-      price: '500 UGX',
+      name: 'Black Tea (spiced)',
+      price: '1,000 UGX',
       desc: 'Hot and refreshing',
+      hot: true,
+    },
+    {
+      name: 'Spiced Milk Tea',
+      price: '2,000 UGX',
+      desc: 'Aromatic blend',
       hot: true,
     },
   ],
@@ -157,6 +163,24 @@ const MENU_DATA = {
       hot: true,
     },
     {
+      name: 'Chicken (1 piece)',
+      price: '5,000 UGX',
+      desc: ' ',
+      hot: true,
+    },
+    {
+      name: 'Half Chicken',
+      price: '10,000 UGX',
+      desc: ' ',
+      hot: true,
+    },
+    {
+      name: 'Full Chicken',
+      price: '20,000 UGX',
+      desc: ' ',
+      hot: true,
+    },
+    {
       name: 'Chips Plain',
       price: '3,000 UGX',
       desc: 'Crispy golden fries',
@@ -164,7 +188,7 @@ const MENU_DATA = {
     },
     {
       name: 'Sausages (Pair)',
-      price: '1,000 UGX',
+      price: '1,500 UGX',
       desc: 'Grilled to perfection',
       hot: true,
     },
@@ -214,7 +238,7 @@ const MENU_DATA = {
     },
     {
       name: 'All Food & Peas',
-      price: '4,000 UGX',
+      price: '5,000 UGX',
       desc: 'Deliciously seasoned peas',
       hot: false,
     },
@@ -228,6 +252,18 @@ const MENU_DATA = {
       name: 'White Rice & Beans',
       price: '3,000 UGX',
       desc: 'Simple and satisfying',
+      hot: false,
+    },
+    {
+      name: 'Luwombo (meat)',
+      price: '10,000 UGX',
+      desc: 'Heavy gravy',
+      hot: false,
+    },
+    {
+      name: 'Luwombo (meat)',
+      price: '12,000 UGX',
+      desc: 'Heavy gravy & tasty',
       hot: false,
     },
   ],
@@ -267,12 +303,6 @@ const MENU_DATA = {
       price: '1,000 UGX',
       desc: 'Chilled refreshment',
       hot: false,
-    },
-    {
-      name: 'Spiced Milk Tea',
-      price: '1,500 UGX',
-      desc: 'Aromatic blend',
-      hot: true,
     },
   ],
   iceCream: [
@@ -431,7 +461,11 @@ const App = () => {
             onClick={() => handleTabChange('home')}
           >
             <div className="w-10 h-10 spicy-gradient rounded-xl flex items-center justify-center shadow-lg shadow-red-500/20">
-              <span className="font-black text-xl">DH</span>
+            <img
+              src={Logo}
+              alt="Menu QR"
+              className="w-[10px] h-[10px] rounded-lg"
+            />
             </div>
             <div className="hidden sm:block">
               <h1 className="font-bold tracking-tighter leading-none">
@@ -522,7 +556,11 @@ const App = () => {
           <div>
             <div className="flex items-center justify-center md:justify-start gap-2 mb-4">
               <div className="w-8 h-8 spicy-gradient rounded-lg flex items-center justify-center">
-                <span className="font-bold text-sm">DH</span>
+              <img
+                src={Logo}
+                alt="Menu QR"
+                className="w-[10px] h-[10px] rounded-lg"
+              />
               </div>
               <span className="font-bold">DUNAMIS HOTPLATE</span>
             </div>
@@ -541,20 +579,15 @@ const App = () => {
               Connect
             </h4>
             <div className="flex justify-center md:justify-start gap-4">
-              <a
-                href="#"
-                className="p-2 bg-slate-800 rounded-lg hover:text-red-500"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
+              
+              {/* <a
                 href="#"
                 className="p-2 bg-slate-800 rounded-lg hover:text-red-500"
               >
                 <Facebook size={20} />
-              </a>
+              </a> */}
               <a
-                href="tel:0753271472"
+                href="tel:0701767939"
                 className="p-2 bg-slate-800 rounded-lg hover:text-red-500"
               >
                 <Phone size={20} />
@@ -813,8 +846,8 @@ const ContactSection = () => (
               <p className="text-xs text-slate-500 font-bold uppercase mb-1">
                 Call Us
               </p>
-              <p className="text-xl font-bold">0753 271 472</p>
-              <p className="text-sm text-slate-400">0701 767 939</p>
+              <p className="text-xl font-bold">0701 767 939</p>
+              <p className="text-sm text-slate-400">0753 271 472</p>
             </div>
           </div>
           <div className="flex gap-4">
