@@ -559,7 +559,7 @@ const App = () => {
               <img
                 src={Logo}
                 alt="Menu QR"
-                className="w-10 h-10 rounded-lg"
+                className="w-8 h-8 rounded-lg"
               />
               </div>
               <span className="font-bold">DUNAMIS HOTPLATE</span>
